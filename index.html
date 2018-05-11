@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MFA D+T Report</title><!-- STYLESHEETS -->
+	<title>MFA D+T Report</title>
+	<!-- <meta http-equiv="refresh" content="15"> -->
 	<link href="css/style.css" rel="stylesheet">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet" type="text/css">
@@ -22,8 +23,9 @@
 		<section>
 		<div id="part2" class="houses">
 			<div class="intro">
-				<h2> Welcome to <br>the MFA DT report!</h2>
-				<p>For the last couple of months I've been gathering information about the MFA D+T community to try to learn a few things about the alumni and the students currently enrolled. More specifically, I tried to find the networks nationalities and where they are living now, what industries they are working in and what trends in tech they think should be covered taught in the program. <br><br><br><span style="font-weight: 400; font-size: 1.1em">Keep scrolling down or click on any section in the navigation bar<br> to start exploring the data and results I've found so far!</span></p>
+				<h2> Welcome to <br>the MFA D+T report!</h2>
+				<p>For the past 3 months I've been gathering information about the MFA Design + Technology (D+T) community to try to learn a about the alumni and current students. By launching a quick survey, I gathered a sample of 120 responses cointining data on their nationalities and where they are living now, what industries they are working in and what trends in industries of design and technology they think should be studied and explored in the program.<br><br>
+				Here below I present a series of data visualizations based on the data gathered and created with the Javascript library D3.js. This project also includes code in HTML, CSS and vanilla Javascript. I hope you find this information insightful. Enjoy!<br><br><br><span style="font-weight: 400; font-size: 1.1em">Keep scrolling down or click on any section in the navigation bar to start exploring the data and results!</span></p>
 			</div>
 		</div>
 		</section>
@@ -32,7 +34,7 @@
 
 			<div class="sankey">
 				<h2>What country are you from and <br>where are you living today?</h2>
-				<div id="chart"></div>
+				<div id="sankeychart"></div>
 
 
 			</div>
@@ -41,7 +43,7 @@
 		<section>
 			<div id="part4" class="partFour">
 				<div class="workstatus">
-					<h2>What's your current work status?s</h2>
+					<h2>What categories best describes the <br>industry that you are working in?</h2>
 				    <div id="workStatChart"></div>
 			    </div>
 		    </div>
@@ -49,8 +51,21 @@
 		<section>
 			<div id="part5" class="partFive">
 				<div class="lovework">
-					<h2>What's your current work status?s</h2>
+					<h2><span style="color: white">If you were graduating from D+T today, <br>what company would you love to work for?</span></h2>
 				    <div id="loveworkstat"></div>
+			    </div>
+		</div>
+		</section>
+		<section>
+			<div id="part6" class="partSix">
+				<div class="trendsinfo">
+					<h2>1. Which D+T skills are the most <span style="color: #ce1836">competitive</span> today? <br>2. Which D+T skills would you <span style="color: #ce1836">love</span> to learn?</h2>
+					<div>
+					<button id="decade" class="trendsButton" autofocus="autofocus">Most competitive skills</button>
+					<button id="combine" class="trendsButton" style="margin-left: 100px">Skills would love to learn</button>
+					</div>
+					<br>
+				    <div id="trendstat"></div>
 			    </div>
 		</div>
 		</section>
@@ -59,16 +74,20 @@
 			<li><button class="buttonTwo" onclick="window.location.href='index.html#part2'">2</button></li>
 			<li><button class="buttonThree" onclick="window.location.href='index.html#part3'">3</button></li>
 			<li><button class="buttonFour" onclick="window.location.href='index.html#part4'">4</button></li>
-			<li><button class="buttonFive" style="border-radius:0px 0px 10px 10px;" onclick="window.location.href='index.html#part5'">5</button></li>
-		</ul><!-- SCRIPTS -->
+			<li><button class="buttonFive" onclick="window.location.href='index.html#part5'">5</button></li>
+			<li><button class="buttonSix" style="border-radius:0px 0px 10px 10px;" onclick="window.location.href='index.html#part6'">6</button></li>
+		</ul>
+		
+		<!-- SCRIPTS -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="js/zoombubble.js"></script>
 		<script src="js/sankeyV2.js"></script>
 		<script src="js/sankeyV2_2.js"></script>
 		<script src="js/workstat.js"></script>
-		<script src="zoombubble.js"></script>
-		
-<!--		<script src="js/index.js"></script>-->
+		<script src="js/trends.js"></script>
+    	
+		<script src="js/index.js"></script>
 
 	</div>
 </body>

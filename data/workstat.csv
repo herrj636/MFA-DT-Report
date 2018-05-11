@@ -1,14 +1,1 @@
-id,votes,amount,decade
-"Web development coding (HTML, CSS, Javascript, PHP)",14,6,yes
-Software and app development coding,3,6,no
-VR/AR development,3,6,yes
-Visual design concepts,5,6,no
-Physical computing,0,11,yes
-3D modeling and redering,1,6,no
-Motion graphics,1,9,yes
-Blockchain technology,5,9,no
-"Business skills (Writing, presenting and project management)",4,6,yes
-Data management and data visualizations,6,6,no
-AI & machine learning,15,6,yes
-Storytelling and/or game design,1,11,no
-Principles of Design,4,1,yes
+id,votes,amount,decadeDesign Services,13,6,yesDigital Design Services,30,6,noUrban Design,4,6,yes2D/3D Motion Graphics,11,6,noMedia & Entertainment,6,11,yes"Art, Theater & Performance",14,6,noGaming,10,9,noSofware Development,2,6,yesWeb Development,7,6,yesCyber Security,4,6,noGovernment & Non-profit,1,6,yesEducation,2,11,noPhysical Computing,2,,

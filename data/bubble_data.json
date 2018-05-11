@@ -1,0 +1,67 @@
+{
+ "name": "Where MFADT would love to work",
+ "children": [
+  {
+   "name": "Independent", "size": 70000 
+  },
+  {
+   "name": "Technology & Social Media",
+   "children": [
+      {"name": "Twitter", "size": 10000},
+      {"name": "Google", "size": 60000},
+      {"name": "Amazon", "size": 30000}
+   ]
+  },
+  {
+   "name": "Media & Journalism",
+   "children": [
+    {"name": "The New York Times", "size": 20000},
+    {"name": "Viacom", "size": 10000}
+   ]
+  },
+  {
+   "name": "Gaming",
+   "children": [
+    {"name": "Valve", "size": 10000},
+    {"name": "Blizzard", "size": 30000}
+   ]
+  },
+  {
+   "name": "Architecture, Art & Design Studios",
+   "children": [
+    {"name": "IDEO", "size": 20000},
+    {"name": "Hypersonic", "size": 10000},
+    {"name": "Frog Design", "size": 40000},
+    {"name": "Potion", "size": 10000},
+    {"name": "ESI Design", "size": 10000},
+	  {"name": "teamLab", "size": 10000},
+    {"name": "Yuco Lab", "size": 10000}
+   ]
+  },
+  {
+   "name": "Museums and Education",
+   "children": [
+    {"name": "Holocaust Museum", "size": 10000},
+    {"name": "Museum of Modern Art", "size": 40000},
+	{"name": "Whitney Museum", "size": 10000},
+	{"name": "MIT", "size": 20000},
+    {"name": "Parsons", "size": 10000}
+   ]
+  },
+  {
+   "name": "Gov't & Non-Profits",
+   "children": [
+    {"name": "Mozilla Foundation", "size": 10000},
+    {"name": "Eyebeam", "size": 10000}
+   ]
+  },
+    {
+     "name": "Consumer",
+     "children": [
+      {"name": "Voodoo Manufacturing", "size": 10000},
+      {"name": "HungerPass", "size": 10000},
+      {"name": "Dropmodel", "size": 10000}
+     ]
+    }
+ ]
+}

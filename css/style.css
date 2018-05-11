@@ -1,24 +1,54 @@
+tspan {
+  x: 0;
+}
+
 
 /*SANKEY CSS*/
-.node rect {
+#part3 .node rect {
   cursor: move;
   fill-opacity: .9;
   shape-rendering: crispEdges;
 }
 
-.node text {
+#part3  text {
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
 }
 
-.link {
+#part3 .link {
   fill: none;
   stroke: #000;
   stroke-opacity: .2;
 }
 
-.link:hover {
+#part3 .link:hover {
   stroke-opacity: .4;
+}
+
+/*CIRCLE PACK CSS*/
+#part5 .nodebubble {
+  cursor: pointer;
+}
+
+#part5 .nodebubble:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+#part5 .nodeleaf {
+  fill: white;
+}
+
+#part5 .label {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+#part5 .label,
+#part5 .noderoot,
+#part5 .nodeleaf {
+  pointer-events: none;
 }
 
 /* HTML DESIGN CSS*/
@@ -102,7 +132,7 @@ h2 {
   font-weight: 300;
 }
 
-.abt{
+.abt {
   background:#ffffff;
   width:100%; height:100%;
   display: table;
@@ -111,7 +141,7 @@ h2 {
 
 
 
-.sankey{
+.sankey {
 	display:flex;
 	justify-content:center;
 	flex-direction: column;
@@ -120,17 +150,65 @@ h2 {
 }
 
 
-.partFour{
+.partFour {
   background:#ce1836;
   width:100%; height:100vh;
 }
 
-.workstatus{
+.workstatus {
 	display:flex;
 	justify-content:center;
 	flex-direction: column;
 	align-items:center;
 	padding-top: 9vh
+}
+
+.lovework {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 9vh
+}
+
+.partSix {
+  background:#ffffff;
+  width:100%; height:100vh;
+}
+
+.trendsinfo {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 4vh
+}
+
+.trendsButton {
+  font-family: NeueDisplay-Random;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.trendsButton:hover {
+    background-color: #333333;
+    color: white;
+}
+
+.trendsButton:active {
+    background-color: #333333;
+    color: white;
+}
+
+.trendsButton:focus {
+    background-color: #333333;
+    color: white;
 }
 
 #menu{

@@ -21,13 +21,13 @@
       .append("g")
       .attr("transform", "translate(0,0)")
 
-    var radiusScale = d3.scaleSqrt().domain([0, 15]).range([25,75])
+    var radiusScale = d3.scaleSqrt().domain([0, 15]).range([10,75])
 
     var simulation = d3.forceSimulation()
-      .force("x", d3.forceX(width / 2).strength(0.085))
+      .force("x", d3.forceX(width / 2).strength(0.075))
       .force("y", d3.forceY(height / 2).strength(0.05))
       .force("collide", d3.forceCollide(function(d){
-      	return radiusScale(d.votes) + 10;
+      	return radiusScale(d.votes) + 13;
       }))
 
     var color = d3.scaleOrdinal()
@@ -61,8 +61,9 @@
         .enter()
         .append('text')
         .text(d => d.id)
+        .attr('text-anchor', 'middle')
         .attr('color', 'black')
-	    .attr('font-family', 'Lato')
+  	    .attr('font-family', 'Lato')
         .attr('font-weight', 'bold')
         .attr('font-size', 15)
         .attr('inline-size', '100px')
@@ -80,13 +81,14 @@
     	  	return d.y
     	  });
 
-        texts.attr('x', (data) => {
-            return (data.x - 50)
+      texts
+        .attr('x', (data) => {
+            return data.x
         })
         .attr('y', (data) => {
             return data.y
         });
-    	  }
+        }
     
     }
 

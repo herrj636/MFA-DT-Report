@@ -1,51 +1,46 @@
-function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)function(d) { 
-    	  	return color(d.id)
+
+
 var units = "People";
 
-// set the dimensions and margins of the graph
+// set the dimensions and marginSankeys of the graph
 
-var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 1100 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+var marginSankey = {top: 10, right: 10, bottom: 10, left: 10},
+    widthSankey = 1100 - marginSankey.left - marginSankey.right,
+    heightSankey = 700 - marginSankey.top - marginSankey.bottom;
 
 // format variables
 var formatNumber = d3.format(",.0f"),    // zero decimal places
-    format = function(d) { return formatNumber(d) + " " + units; },
-    color = d3.scaleOrdinal()
-//    .domain(10)
-//    .range(["#3957ff", "#9ec4ff", "#cbdcff", "#c00b06", "#0f8202", "#f6f220", "#ee0df1", "#7b7074", "#ffa98c", "#0be7a6", "#aa7e02", "#0a9ba0", "#fe4b80"]);
-       .range(['#e81839','#e3004d','#db0060','#d00871','#e82e21','#c11d80','#af2c8c','#9a3796','#84409c','#6b47a0','#514c9f','#334f9c','#005096']);
+    format = function(d) { return formatNumber(d) + " " + units; };
+    
 
 
 
 
 // append the svg object to the body of the page
-var svg = d3.select("#chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+var svg = d3.select("#sankeychart").append("svg")
+
+    .attr("class", "alphaChart")
+    .attr("width", widthSankey + marginSankey.left + marginSankey.right)
+    .attr("height", heightSankey + marginSankey.top + marginSankey.bottom)
     .attr("viewbox", "0, 0, 500, 900")
     .append("g")
     .attr("transform", 
-          "translate(" + margin.left + "," + margin.top + ")");
+          "translate(" + marginSankey.left + "," + marginSankey.top + ")");
 
 // Set the sankey diagram properties
 var sankey = d3.sankey()
     .nodeWidth(36)
     .nodePadding(20)
-    .size([width, height]);
+    .size([widthSankey, heightSankey]);
 
 var path = sankey.link();
 
 // load the data
 d3.json("data/sankey-formatted.json", function(error, graph) {
+
+var color = d3.scaleOrdinal()
+
+       .range(["#0507c4", "#950002", "#0ec9ff", "#fd9b29", "#178120", "#8d0f9e", "#746eff", "#ff4667", "#09fece", "#fef758", "#21ce03", "#68fc92", "#8a53fe", "#bc5900", "#e512be", "#c153fd", "#05bf6c", "#660cd6", "#a80c5f", "#0560bc", "#1592db", "#da0c09", "#fe6528"]);
 
   sankey
       .nodes(graph.nodes)
@@ -68,10 +63,10 @@ d3.json("data/sankey-formatted.json", function(error, graph) {
                 d.target.name + "\n" + format(d.value); });
 
 // add in the nodes
-  var node = svg.append("g").selectAll(".node")
+  var node = svg.append("g").selectAll(".alpha")
       .data(graph.nodes)
     .enter().append("g")
-      .attr("class", "node")
+      .attr("class", "alpha")
       .attr("transform", function(d) { 
       return "translate(" + d.x + "," + d.y + ")"; })
       .call(d3.drag()
@@ -122,3 +117,4 @@ d3.json("data/sankey-formatted.json", function(error, graph) {
     link.attr("d", path);
   }
 });
+
