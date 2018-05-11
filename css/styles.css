@@ -1,0 +1,37 @@
+
+
+body {
+	background-color: #E82E21;
+}
+
+#homeLogo {
+	position:absolute; 
+}
+
+html {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+#homeLogo {
+    position:relative;
+    height: 100%;
+    width:100%;
+}
+
+#homeLogo img {
+    position:absolute;
+    width: 35%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
