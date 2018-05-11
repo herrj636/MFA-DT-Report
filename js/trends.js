@@ -155,7 +155,7 @@
       .range(['#820333']);
 
     d3.queue()
-        .defer(d3.csv, "data/answerdata.csv")
+        .defer(d3.json, "data/answerdata.json")
         .await(ready)
 
     function ready(error, datapoints) {
