@@ -1,15 +1,75 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>MFADT Report</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="UTF-8">
+	<title>MFA D+T Report</title><!-- STYLESHEETS -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="homeLogo">
-	<img src="assets/DTReport_LogoBlack.png">
+	<div id="holder">
+		<section>
+		<div id="part1" class="hom">
+			<div id="keyframe_anime"></div>
+			<div id="linetwo"></div>
+			<div style="padding:10px; width:80%; margin:0px auto; padding-top:15%;">
+				<h1>MFA DT<br>
+				Report</h1>
+			</div>
+		</div>
+		</section>
+		<section>
+		<div id="part2" class="houses">
+			<div class="intro">
+				<h2> Welcome to <br>the MFA DT report!</h2>
+				<p>For the last couple of months I've been gathering information about the MFA D+T community to try to learn a few things about the alumni and the students currently enrolled. More specifically, I tried to find the networks nationalities and where they are living now, what industries they are working in and what trends in tech they think should be covered taught in the program. <br><br><br><span style="font-weight: 400; font-size: 1.1em">Keep scrolling down or click on any section in the navigation bar<br> to start exploring the data and results I've found so far!</span></p>
+			</div>
+		</div>
+		</section>
+		<section>
+		<div id="part3" class="abt">
 
-</div>
+			<div class="sankey">
+				<h2>What country are you from and <br>where are you living today?</h2>
+				<div id="chart"></div>
+
+
+			</div>
+		</div>
+		</section>
+		<section>
+			<div id="part4" class="partFour">
+				<div class="workstatus">
+					<h2>What's your current work status?s</h2>
+				    <div id="workStatChart"></div>
+			    </div>
+		    </div>
+		</section>
+		<section>
+			<div id="part5" class="partFive">
+				<div class="lovework">
+					<h2>What's your current work status?s</h2>
+				    <div id="loveworkstat"></div>
+			    </div>
+		</div>
+		</section>
+		<ul id="menu">
+			<li><button class="homeButton" id="home_btn" style="border-radius:10px 10px 0px 0px;" onclick="window.location.reload()">1</button></li>
+			<li><button class="buttonTwo" onclick="window.location.href='index.html#part2'">2</button></li>
+			<li><button class="buttonThree" onclick="window.location.href='index.html#part3'">3</button></li>
+			<li><button class="buttonFour" onclick="window.location.href='index.html#part4'">4</button></li>
+			<li><button class="buttonFive" style="border-radius:0px 0px 10px 10px;" onclick="window.location.href='index.html#part5'">5</button></li>
+		</ul><!-- SCRIPTS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="js/sankeyV2.js"></script>
+		<script src="js/sankeyV2_2.js"></script>
+		<script src="js/workstat.js"></script>
+		<script src="zoombubble.js"></script>
+		
+<!--		<script src="js/index.js"></script>-->
+
+	</div>
 </body>
-<script type="text/javascript" src="js/scripts.js"></script>
 </html>
