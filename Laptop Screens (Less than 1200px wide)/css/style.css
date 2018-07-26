@@ -1,0 +1,358 @@
+tspan {
+  x: 0;
+}
+
+/*SANKEY CSS*/
+.alphachart{
+  /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+
+#part3 .node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+#part3 text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#part3 .link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+#part3 .link:hover {
+  stroke-opacity: .4;
+}
+
+/*CIRCLE PACK CSS*/
+#part5 .nodebubble {
+  cursor: pointer;
+}
+
+#part5 .nodebubble:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+#part5 .nodeleaf {
+  fill: white;
+}
+
+#part5 .label {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+#part5 .label,#part5 .noderoot,#part5 .nodeleaf {
+  pointer-events: none;
+}
+
+/* HTML DESIGN CSS*/
+*{
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+a{
+  color: #fff;
+}
+
+@font-face {
+  font-family: "NeueDisplay";
+  src:local('NeueDisplay-Random.otf');
+}
+
+body{
+  overflow:scroll;
+  background:#333;
+  margin:0px;
+  padding:0px;
+}
+
+p {
+  font-family: Lato;
+}
+
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+}
+
+h2 {
+  font-family: NeueDisplay-Random;
+  font-size: 2em;
+}
+
+.hom{
+  background:#E82E21;
+  width:100%;
+  height:100vh;
+  color:rgba(255,255,255,1);
+  max-width: none;
+  display: table;
+}
+
+.hom h1 {
+  font-family: NeueDisplay-Random;
+  font-size: 5.5vw;
+  position:absolute;
+  vertical-align: middle;
+  width: 60%;
+  top: 40%;
+  left: 30%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.houses{
+  background:#000000;
+  width:100%;
+  height:100vh;
+  display: table;
+}
+
+.intro {
+  margin: 0;
+  color:#ffffff;
+  font-size: 1.4em;
+  padding-top: 12%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.intro p {
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.abt {
+  background:#ffffff;
+  width:100%;
+  height:100%;
+  display: table;
+  vertical-align: middle
+}
+
+.sankey {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 9vh
+}
+
+.partFour {
+  background:#ce1836;
+  width:100%;
+  height:100vh;
+}
+
+.workstatus {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 9vh
+}
+
+.lovework {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 9vh
+}
+
+.partSix {
+  background:#ffffff;
+  width:100%;
+  height:100vh;
+}
+
+.trendsinfo {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 4vh
+}
+
+.trendsButton {
+  font-family: NeueDisplay-Random;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.trendsButton:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.trendsButton:active {
+  background-color: #333333;
+  color: white;
+}
+
+.trendsButton:focus {
+  background-color: #333333;
+  color: white;
+}
+
+#menu{
+  position:fixed;
+  left:30px;
+  top:35%;
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  outline: none;
+}
+
+#menu li{
+  color:#fff;
+  padding-bottom: 2px;
+}
+
+#menu li button{
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: 0px;
+  padding-top: 7px;
+  font-family: NeueDisplay-Random;
+  font-size: .8em;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 6px;
+}
+
+#menu li button:hover{
+  width:50px;
+  height:50px;
+  background:#555;
+  border:0px;
+  cursor:pointer;
+}
+
+.sankey-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  /*padding-bottom: 100%;*/
+  vertical-align: top;
+  overflow: hidden;
+}
+
+#keyframe_anime {
+  width: 65vw;
+  height: 1.8vh;
+  background-color: white;
+  position: relative;
+  animation-name: lineOne;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  top: 37vh;
+}
+
+@keyframes lineOne {
+  0%{
+    left: -66vw;
+    top: 37vh;
+  }
+  100%{
+    left: 0vw;
+    top: 37vh;
+}
+}
+
+#linetwo {
+width: 70vw;
+height: 1.8vh;
+background-color: white;
+position: relative;
+animation-name: linetwo;
+animation-duration: 5s;
+animation-iteration-count: 1;
+top: 31vh;
+}
+
+@keyframes linetwo {
+0%{
+  left: -66vw;
+  top: 31vh;
+}
+100%{
+  left: 0vw;
+  top: 31vh;
+}
+}
+/*/////////////////////////////MEDIA QUERIES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*-------DESKTOPS AND LAPTOPS-------*/
+@media only screen  and (min-width : 900px) {
+ 
+.intro {
+  margin: 0;
+  color:#ffffff;
+  padding-top: 8%;
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+  h2 {
+  font-family: NeueDisplay-Random;
+  font-size: 1.6em;
+}
+
+.intro p {
+  font-size: .9em;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.sankey {
+  padding-top: 5vh
+}
+
+.workstatus {
+  padding-top: 5vh
+}
+
+.lovework {
+  padding-top: 5vh
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1200px) {
+/* Styles */
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1800px) {
+/* Styles */
+}

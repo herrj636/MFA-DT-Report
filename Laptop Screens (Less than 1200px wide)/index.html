@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MFA D+T Report</title>
+	<!-- <meta http-equiv="refresh" content="15"> -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="holder">
+		<section>
+		<div id="part1" class="hom">
+			<div id="keyframe_anime"></div>
+			<div id="linetwo"></div>
+			<div style="padding:10px; width:80%; margin:0px auto; padding-top:15%;">
+				<h1>MFA DT<br>
+				Report</h1>
+			</div>
+		</div>
+		</section>
+		<section>
+		<div id="part2" class="houses">
+			<div class="intro">
+				<h2> Welcome to <br>the MFA D+T report!</h2>
+				<p>As a student in the <a href="https://www.newschool.edu/parsons/mfa-design-technology/" target="_blank">MFA Design + Technology (D+T)</a> program at Parsons School of Design, I wanted to tap into the knowledge of students and alumni to learn about current trends in the creative technology industries, as well as about their lives working in said industries.<br><br>Therefore, between September and December 2017 I set to reach out to the D+T community by launching a survey asking them about their nationalities, where they are living now and what industries they are working in at the moment. Moreover, I also wanted to learn from them what trends in design and technology they think should be studied and explored in the program.<br><br>
+				After gathering 120 responses, I compilled and reviewed the data and created a web report using series of data visualizations using the Javascript library D3.js. This project also uses code in HTML, CSS and plain Javascript. I hope you find this information insightful. Enjoy!</p>
+				<p><span style="font-weight: 400">Keep scrolling down or click on any section in the navigation bar to start exploring the data and results!</span></p>
+			</div>
+		</div>
+		</section>
+		<section>
+		<div id="part3" class="abt">
+
+			<div class="sankey">
+				<h2>What country are you from and <br>where are you living today?</h2>
+				<div id="sankeychart"></div>
+
+
+			</div>
+		</div>
+		</section>
+		<section>
+			<div id="part4" class="partFour">
+				<div class="workstatus">
+					<h2>What categories best describe the <br>industry that you are working in?</h2>
+				    <div id="workStatChart"></div>
+			    </div>
+		    </div>
+		</section>
+		<section>
+			<div id="part5" class="partFive">
+				<div class="lovework">
+					<h2><span style="color: white">If you were graduating from D+T today, <br>what company would you love to work for?</span></h2>
+				    <div id="loveworkstat"></div>
+			    </div>
+		</div>
+		</section>
+		<section>
+			<div id="part6" class="partSix">
+				<div class="trendsinfo">
+					<h2>Which D+T skills are the most <span style="color: #ce1836">competitive</span> today?<br><span style="color: #ce1836">and </span>Which D+T skills would you <span style="color: #ce1836">love</span> to learn?</h2>
+					<div>
+					<button id="decade" class="trendsButton" autofocus="autofocus">Most competitive skills</button>
+					<button id="combine" class="trendsButton" style="margin-left: 100px">Skills would love to learn</button>
+					</div>
+					<br>
+				    <div id="trendstat"></div>
+			    </div>
+		</div>
+		</section>
+		<ul id="menu">
+			<li><button class="homeButton" id="home_btn" style="border-radius:10px 10px 0px 0px;" onclick="window.location.reload()">1</button></li>
+			<li><button class="buttonTwo" onclick="window.location.href='index.html#part2'">2</button></li>
+			<li><button class="buttonThree" onclick="window.location.href='index.html#part3'">3</button></li>
+			<li><button class="buttonFour" onclick="window.location.href='index.html#part4'">4</button></li>
+			<li><button class="buttonFive" onclick="window.location.href='index.html#part5'">5</button></li>
+			<li><button class="buttonSix" style="border-radius:0px 0px 10px 10px;" onclick="window.location.href='index.html#part6'">6</button></li>
+		</ul>
+		
+		<!-- SCRIPTS -->
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="js/zoombubble.js"></script>
+		<script src="js/sankeyV2.js"></script>
+		<script src="js/sankeyV2_2.js"></script>
+		<script src="js/workstat.js"></script>
+		<script src="js/trends.js"></script>
+    	
+		<script src="js/index.js"></script>
+
+	</div>
+</body>
+</html>
