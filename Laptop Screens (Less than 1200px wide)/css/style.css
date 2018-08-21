@@ -309,20 +309,30 @@ top: 31vh;
 }
 }
 /*/////////////////////////////MEDIA QUERIES\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-/*-------DESKTOPS AND LAPTOPS-------*/
-@media only screen  and (min-width : 900px) {
- 
+/*-------TEMP MOBILE-------*/
+@media only screen  and (min-width : 250px) {
+/* Styles */
+#menu{
+  position:fixed;
+  left:20px;
+  top:25%;
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  outline: none;
+}
+
 .intro {
   margin: 0;
   color:#ffffff;
-  padding-top: 8%;
+  padding-top: 4%;
   padding-left: 16%;
   padding-right: 16%;
 }
 
-  h2 {
+h2 {
   font-family: NeueDisplay-Random;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .intro p {
@@ -332,15 +342,133 @@ top: 31vh;
 }
 
 .sankey {
-  padding-top: 5vh
+  padding-top: 3vh
 }
 
 .workstatus {
-  padding-top: 5vh
+  padding-top: 1vh
 }
 
 .lovework {
-  padding-top: 5vh
+  padding-top: 2vh
+}
+
+.trendsinfo {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 1.5vh
+}
+
+.trendsButton {
+  font-family: NeueDisplay-Random;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.trendsButton:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.trendsButton:active {
+  background-color: #333333;
+  color: white;
+}
+
+.trendsButton:focus {
+  background-color: #333333;
+  color: white;
+}
+
+}
+
+
+
+/*-------DESKTOPS AND LAPTOPS-------*/
+@media only screen  and (min-width : 900px) {
+ 
+#menu{
+  position:fixed;
+  left:20px;
+  top:25%;
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  outline: none;
+}
+
+.intro {
+  margin: 0;
+  color:#ffffff;
+  padding-top: 6%;
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+h2 {
+  font-family: NeueDisplay-Random;
+  font-size: 1.4em;
+}
+
+.intro p {
+  font-size: .9em;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.sankey {
+  padding-top: 3vh
+}
+
+.workstatus {
+  padding-top: 1vh
+}
+
+.lovework {
+  padding-top: 2vh
+}
+
+.trendsinfo {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 1.5vh
+}
+
+.trendsButton {
+  font-family: NeueDisplay-Random;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.trendsButton:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.trendsButton:active {
+  background-color: #333333;
+  color: white;
+}
+
+.trendsButton:focus {
+  background-color: #333333;
+  color: white;
 }
 
 }
